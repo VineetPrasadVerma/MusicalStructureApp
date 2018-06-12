@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="english_songs">English Songs</string>
+    <string name="hindi_songs">Hindi Songs</string>
+    <string name="bhojpuri_songs">Bhojpuri Songs</string>
+    <string name="pop_songs">Pop Songs</string>
+</resources>

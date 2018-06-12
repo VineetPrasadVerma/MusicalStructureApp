@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/english_songs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:textSize="@dimen/twenty_four_sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:background="@color/category_english_songs"
+        android:text="@string/english_songs"/>
+
+    <TextView
+        android:id="@+id/hindi_songs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:background="@color/category_hindi_songs"
+        android:textSize="@dimen/twenty_four_sp"
+        android:text="@string/hindi_songs"/>
+
+    <TextView
+        android:id="@+id/bhojpuri_songs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:background="@color/category_bhojpuri_songs"
+        android:textSize="@dimen/twenty_four_sp"
+        android:text="@string/bhojpuri_songs"/>
+
+    <TextView
+        android:id="@+id/pop_songs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:background="@color/category_pop_songs"
+        android:textSize="@dimen/twenty_four_sp"
+        android:text="@string/pop_songs"/>
+
+</GridLayout>
