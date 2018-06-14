@@ -1,7 +1,6 @@
 package com.example.vineetprasadverma.musicalstructureapp;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //find a view that shows the english songs
         TextView englishTextView = findViewById(R.id.english_songs);
         // Set a click listener on that View
         englishTextView.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //find a view that shows the hindi songs.
         TextView hindiTextView = findViewById(R.id.hindi_songs);
+        //Set a click listener on that view.
         hindiTextView.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the hindi songs View is clicked on.
             @Override
@@ -35,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //find a view that shows the bhojpouri songs.
         TextView bhojpuriTextView = findViewById(R.id.bhojpuri_songs);
+        //Set a click listener on that view
         bhojpuriTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             // The code in this method will be executed when the bhojpuri songs View is clicked on.
@@ -45,13 +49,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView popTextView = findViewById(R.id.pop_songs);
-        popTextView.setOnClickListener(new View.OnClickListener() {
+        //find a view that shows the punjabi songs
+        TextView punjabiTextView = findViewById(R.id.punjabi_songs);
+        //Set a click listener on that view.
+        punjabiTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             // The code in this method will be executed when the pop songs View is clicked on.
             public void onClick(View view) {
-                Intent popTextView = new Intent(MainActivity.this,PopSongsActivity.class);
-                startActivity(popTextView);
+                Intent punjabiTextView = new Intent(MainActivity.this,PunjabiSongsActivity.class);
+                startActivity(punjabiTextView);
             }
         });
 

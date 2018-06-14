@@ -21,8 +21,8 @@
             android:label="@string/hindi_songs"/>
         <activity android:name=".BhojpuriSongsActivity"
             android:label="@string/bhojpuri_songs"/>
-        <activity android:name=".PopSongsActivity"
-            android:label="@string/pop_songs"/>
+        <activity android:name=".PunjabiSongsActivity"
+            android:label="@string/punjabi_songs"/>
     </application>
 
 </manifest>

@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rowCount="2"
     android:columnCount="2"
     android:orientation="horizontal"
+    android:rowCount="2"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,13 +15,12 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:gravity="center"
-        android:textSize="@dimen/twenty_four_sp"
-        android:textStyle="bold"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/english_songs"
         android:textAllCaps="true"
-        android:background="@color/category_english_songs"
-        android:text="@string/english_songs"/>
+        android:textSize="@dimen/twenty_four_sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/hindi_songs"
@@ -29,13 +28,12 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:gravity="center"
-        android:textStyle="bold"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/hindi_songs"
         android:textAllCaps="true"
-        android:background="@color/category_hindi_songs"
         android:textSize="@dimen/twenty_four_sp"
-        android:text="@string/hindi_songs"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/bhojpuri_songs"
@@ -43,26 +41,24 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:gravity="center"
-        android:textStyle="bold"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/bhojpuri_songs"
         android:textAllCaps="true"
-        android:background="@color/category_bhojpuri_songs"
         android:textSize="@dimen/twenty_four_sp"
-        android:text="@string/bhojpuri_songs"/>
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/pop_songs"
+        android:id="@+id/punjabi_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:gravity="center"
-        android:textStyle="bold"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/punjabi_songs"
         android:textAllCaps="true"
-        android:background="@color/category_pop_songs"
         android:textSize="@dimen/twenty_four_sp"
-        android:text="@string/pop_songs"/>
+        android:textStyle="bold" />
 
 </GridLayout>
