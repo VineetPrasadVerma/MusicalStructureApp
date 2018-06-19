@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="@dimen/eighty_eight_dp"
     android:padding="@dimen/sixteen_dp">
 
-    <TextView
-        android:id="@+id/song_name_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        tools:text="Addicted" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_height="@dimen/eighty_eight_dp"
+        android:layout_width="@dimen/eighty_eight_dp"
+        android:src="@drawable/musicicon"/>
 
-    <TextView
-        android:id="@+id/artist_name_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/song_name_text_view"
-        tools:text="Enrique Iglesias" />
+        android:layout_height="@dimen/eighty_eight_dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/image_view"
+        android:paddingLeft="@dimen/sixteen_dp">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/song_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:textColor="@android:color/black"
+            tools:text="Addicted" />
+
+        <TextView
+            android:id="@+id/artist_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@android:color/black"
+            tools:text="Enrique Iglesias" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_height="@dimen/twenty_four_dp"
+        android:layout_width="@dimen/twenty_four_dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_play_arrow"
+        android:text="@string/play" />
+
+
+</RelativeLayout>

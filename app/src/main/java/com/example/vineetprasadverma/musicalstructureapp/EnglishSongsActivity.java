@@ -2,6 +2,8 @@ package com.example.vineetprasadverma.musicalstructureapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -35,6 +37,13 @@ public class EnglishSongsActivity extends AppCompatActivity {
 
         //Attach the adapter to the listview.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+            }
+        });
 
 
 

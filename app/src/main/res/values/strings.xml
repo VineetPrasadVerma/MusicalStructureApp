@@ -4,4 +4,5 @@
     <string name="hindi_songs">Hindi Songs</string>
     <string name="bhojpuri_songs">Bhojpuri Songs</string>
     <string name="punjabi_songs">Punjabi Songs</string>
+    <string name="play">Play</string>
 </resources>
