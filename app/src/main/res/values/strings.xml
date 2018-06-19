@@ -5,4 +5,5 @@
     <string name="bhojpuri_songs">Bhojpuri Songs</string>
     <string name="punjabi_songs">Punjabi Songs</string>
     <string name="play">Play</string>
+    <string name="now_playing">Now Playing</string>
 </resources>

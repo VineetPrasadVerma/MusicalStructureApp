@@ -1,7 +1,10 @@
 package com.example.vineetprasadverma.musicalstructureapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ public class HindiSongsActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Create a list of songs
-        ArrayList<Songs> songs= new ArrayList<Songs>();
+        final ArrayList<Songs> songs= new ArrayList<Songs>();
         songs.add(new Songs("Tum Hi Ho","Arijit Singh"));
         songs.add(new Songs("Dil Diya Gallan","Atif Aslam"));
         songs.add(new Songs("Mere Rashke Qamar","Rahat Fateh Ali Khan"));
@@ -35,6 +38,25 @@ public class HindiSongsActivity extends AppCompatActivity {
 
         //set the adapter on the listview.
         listView.setAdapter(adapter);
+
+        //Set a click Listener to open new activity when list items are clicked.
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                //Get the object at the given position
+                Songs song = songs.get(position);
+
+                //To open new activity
+                Intent nowPlayingIntent  = new Intent(HindiSongsActivity.this, NowPlayingActivity.class);
+
+                //passing extra information to the now playing activity.
+                nowPlayingIntent.putExtra("Song Name",song.getSongsName());
+                nowPlayingIntent.putExtra("Artist Name",song.getArtistName());
+
+                startActivity(nowPlayingIntent);
+            }
+        });
 
     }
 }

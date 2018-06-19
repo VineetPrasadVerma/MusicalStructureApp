@@ -2,8 +2,11 @@
 <resources>
     <dimen name="twenty_four_sp">24sp</dimen>
     <dimen name="sixteen_dp">16dp</dimen>
-    <dimen name="hundred_dp">100dp</dimen>
     <dimen name="eighty_eight_dp">88dp</dimen>
     <dimen name="twenty_four_dp">24dp</dimen>
     <dimen name="zero_dp">0dp</dimen>
+    <dimen name="fourty_eight_sp">48sp</dimen>
+    <dimen name="Fourty_eight_dp">48dp</dimen>
+    <dimen name="two_hundred_twenty_dp">220dp</dimen>
+    <dimen name="one_hundred_fifty_dp">150dp</dimen>
 </resources>
