@@ -53,7 +53,7 @@ public class PunjabiSongsActivity extends AppCompatActivity {
                 //passing extra information to the now playing activity.
                 nowPlayingIntent.putExtra("Song Name",song.getSongsName());
                 nowPlayingIntent.putExtra("Artist Name",song.getArtistName());
-
+                nowPlayingIntent.putExtra("color Resource",R.color.category_punjabi_songs);
                 startActivity(nowPlayingIntent);
             }
         });

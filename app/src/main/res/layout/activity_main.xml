@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:background="@color/category_english_songs"
         android:id="@+id/english_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -23,6 +24,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:background="@color/category_hindi_songs"
         android:id="@+id/hindi_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -36,6 +38,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:background="@color/category_bhojpuri_songs"
         android:id="@+id/bhojpuri_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -49,6 +52,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:background="@color/category_punjabi_songs"
         android:id="@+id/punjabi_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"

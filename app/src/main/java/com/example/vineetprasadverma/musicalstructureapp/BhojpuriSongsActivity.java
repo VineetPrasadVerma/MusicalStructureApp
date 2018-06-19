@@ -53,6 +53,7 @@ public class BhojpuriSongsActivity extends AppCompatActivity {
                 //passing extra information to the now playing activity.
                 nowPlayingIntent.putExtra("Song Name",song.getSongsName());
                 nowPlayingIntent.putExtra("Artist Name",song.getArtistName());
+                nowPlayingIntent.putExtra("color Resource",R.color.category_bhojpuri_songs);
 
                 startActivity(nowPlayingIntent);
             }

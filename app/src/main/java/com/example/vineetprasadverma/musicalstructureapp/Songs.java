@@ -9,7 +9,7 @@ public class Songs {
     private String mArtistName;
 
     /**
-     * Create a new Song oblest
+     * Create a new Song object
      * @param songName is the name of the song.
      * @param artistName is the name of the artist.
      */

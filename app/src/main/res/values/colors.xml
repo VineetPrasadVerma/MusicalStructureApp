@@ -5,14 +5,14 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- Background color for the english songs category -->
-    <color name="category_english_songs">#FD8E09</color>
+    <color name="category_english_songs">#9C27B0</color>
 
     <!-- Background color for the hindi songs category -->
-    <color name="category_hindi_songs">#379237</color>
+    <color name="category_hindi_songs">#00BCD4</color>
 
     <!-- Background color for the bhojpuri songs category -->
-    <color name="category_bhojpuri_songs">#8800A0</color>
+    <color name="category_bhojpuri_songs">#009688</color>
 
-    <!-- Background color for the pop songs category -->
-    <color name="category_pop_songs">#16AFCA</color>
+    <!-- Background color for the punjabi songs category -->
+    <color name="category_punjabi_songs">#E91E63</color>
 </resources>

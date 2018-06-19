@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class SongsAdapter extends ArrayAdapter<Songs> {
+
+    /**
+     * Create a new  SongAdapter object.
+     *
+     * @param context         is the current context (i.e. Activity) that the adapter is being created in.
+     * @param songs          is the list of songs to be displayed.
+     */
     public SongsAdapter(Activity context, ArrayList<Songs> songs) {
         super(context, 0, songs);
     }
