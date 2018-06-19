@@ -10,58 +10,62 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:background="@color/category_english_songs"
         android:id="@+id/english_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+        android:background="@color/category_english_songs"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/english_songs"
         android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/twenty_four_sp"
         android:textStyle="bold" />
 
     <TextView
-        android:background="@color/category_hindi_songs"
         android:id="@+id/hindi_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+        android:background="@color/category_hindi_songs"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/hindi_songs"
         android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/twenty_four_sp"
         android:textStyle="bold" />
 
     <TextView
-        android:background="@color/category_bhojpuri_songs"
         android:id="@+id/bhojpuri_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+        android:background="@color/category_bhojpuri_songs"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/bhojpuri_songs"
         android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/twenty_four_sp"
         android:textStyle="bold" />
 
     <TextView
-        android:background="@color/category_punjabi_songs"
         android:id="@+id/punjabi_songs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+        android:background="@color/category_punjabi_songs"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/punjabi_songs"
         android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/twenty_four_sp"
         android:textStyle="bold" />
 

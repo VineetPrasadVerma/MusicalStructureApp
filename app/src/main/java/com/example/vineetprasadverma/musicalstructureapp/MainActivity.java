@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             // The code in this method will be executed when the bhojpuri songs View is clicked on.
             public void onClick(View view) {
-                Intent bhojpuriIntent = new Intent(MainActivity.this,BhojpuriSongsActivity.class);
+                Intent bhojpuriIntent = new Intent(MainActivity.this, BhojpuriSongsActivity.class);
                 startActivity(bhojpuriIntent);
             }
         });
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             // The code in this method will be executed when the pop songs View is clicked on.
             public void onClick(View view) {
-                Intent punjabiTextView = new Intent(MainActivity.this,PunjabiSongsActivity.class);
+                Intent punjabiTextView = new Intent(MainActivity.this, PunjabiSongsActivity.class);
                 startActivity(punjabiTextView);
             }
         });

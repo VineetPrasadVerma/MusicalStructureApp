@@ -18,8 +18,8 @@ public class SongsAdapter extends ArrayAdapter<Songs> {
     /**
      * Create a new  SongAdapter object.
      *
-     * @param context         is the current context (i.e. Activity) that the adapter is being created in.
-     * @param songs          is the list of songs to be displayed.
+     * @param context is the current context (i.e. Activity) that the adapter is being created in.
+     * @param songs   is the list of songs to be displayed.
      */
     public SongsAdapter(Activity context, ArrayList<Songs> songs) {
         super(context, 0, songs);

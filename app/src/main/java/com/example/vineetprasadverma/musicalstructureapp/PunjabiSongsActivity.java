@@ -17,18 +17,18 @@ public class PunjabiSongsActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Creates the list of songs
-        final ArrayList<Songs> songs= new ArrayList<Songs>();
-        songs.add(new Songs("BackBone","Hardy Sandhu"));
-        songs.add(new Songs("Lahore","Guru Randhawa"));
-        songs.add(new Songs("Tenu Suit Suit karda","Guru Randhawa"));
-        songs.add(new Songs("3 Peg","Sherry Maan"));
-        songs.add(new Songs("High Rated Gabru","Guru Randhawa"));
-        songs.add(new Songs("Qismat","Ammy Virk"));
-        songs.add(new Songs("Trending Nakhra","Amrit Maan"));
-        songs.add(new Songs("Dooriya","Guri"));
-        songs.add(new Songs("Daaru Badnaam","Param Singh"));
-        songs.add(new Songs("Shada","Parmish Verma"));
-        songs.add(new Songs("Blue Eyes","Yo Yo Honey Singh"));
+        final ArrayList<Songs> songs = new ArrayList<Songs>();
+        songs.add(new Songs("BackBone", "Hardy Sandhu"));
+        songs.add(new Songs("Lahore", "Guru Randhawa"));
+        songs.add(new Songs("Tenu Suit Suit karda", "Guru Randhawa"));
+        songs.add(new Songs("3 Peg", "Sherry Maan"));
+        songs.add(new Songs("High Rated Gabru", "Guru Randhawa"));
+        songs.add(new Songs("Qismat", "Ammy Virk"));
+        songs.add(new Songs("Trending Nakhra", "Amrit Maan"));
+        songs.add(new Songs("Dooriya", "Guri"));
+        songs.add(new Songs("Daaru Badnaam", "Param Singh"));
+        songs.add(new Songs("Shada", "Parmish Verma"));
+        songs.add(new Songs("Blue Eyes", "Yo Yo Honey Singh"));
 
         //Creates a Song adapter whose data source is a list of the songs.The adapter knows how to create list items for each item in the list.
         SongsAdapter adapter = new SongsAdapter(PunjabiSongsActivity.this, songs);
@@ -48,12 +48,12 @@ public class PunjabiSongsActivity extends AppCompatActivity {
                 Songs song = songs.get(position);
 
                 //To open new activity
-                Intent nowPlayingIntent  = new Intent(PunjabiSongsActivity.this, NowPlayingActivity.class);
+                Intent nowPlayingIntent = new Intent(PunjabiSongsActivity.this, NowPlayingActivity.class);
 
                 //passing extra information to the now playing activity.
-                nowPlayingIntent.putExtra("Song Name",song.getSongsName());
-                nowPlayingIntent.putExtra("Artist Name",song.getArtistName());
-                nowPlayingIntent.putExtra("color Resource",R.color.category_punjabi_songs);
+                nowPlayingIntent.putExtra("Song Name", song.getSongsName());
+                nowPlayingIntent.putExtra("Artist Name", song.getArtistName());
+                nowPlayingIntent.putExtra("color Resource", getResources().getColor(R.color.category_punjabi_songs));
                 startActivity(nowPlayingIntent);
             }
         });

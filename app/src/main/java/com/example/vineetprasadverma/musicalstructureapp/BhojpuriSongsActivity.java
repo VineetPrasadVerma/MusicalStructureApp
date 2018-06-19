@@ -17,18 +17,18 @@ public class BhojpuriSongsActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Create a list of songs
-        final ArrayList<Songs> songs= new ArrayList<Songs>();
-        songs.add(new Songs("Kariya Rashgulla","Khesari Lal Yadav"));
-        songs.add(new Songs("Chumma se Khaali Jhum","Chote Baba"));
-        songs.add(new Songs("Lagelu Hunari Munari","Pawan Singh"));
-        songs.add(new Songs("Filter ke Pani","Arvind Akela Kallji"));
-        songs.add(new Songs("Lachke Kamariya Tohar","Khesari Lal Yadav"));
-        songs.add(new Songs("Cooler Kurti me Lagela","Indu Sonali"));
-        songs.add(new Songs("PandeyJi ka Beta Hoon","Ritesh Pandey"));
-        songs.add(new Songs("Lolipop Lagelu","Manoj Kumar"));
-        songs.add(new Songs("Are Dj Wale Bhai","Khesari Lal Yadav"));
-        songs.add(new Songs("Bhatar Khali Ban Jaye","Arvind Akela Kallji"));
-        songs.add(new Songs("Dhaka Kohariya me Balama","Khesari Lal Yadav"));
+        final ArrayList<Songs> songs = new ArrayList<Songs>();
+        songs.add(new Songs("Kariya Rashgulla", "Khesari Lal Yadav"));
+        songs.add(new Songs("Chumma se Khaali Jhum", "Chote Baba"));
+        songs.add(new Songs("Lagelu Hunari Munari", "Pawan Singh"));
+        songs.add(new Songs("Filter ke Pani", "Arvind Akela Kallji"));
+        songs.add(new Songs("Lachke Kamariya Tohar", "Khesari Lal Yadav"));
+        songs.add(new Songs("Cooler Kurti me Lagela", "Indu Sonali"));
+        songs.add(new Songs("PandeyJi ka Beta Hoon", "Ritesh Pandey"));
+        songs.add(new Songs("Lolipop Lagelu", "Manoj Kumar"));
+        songs.add(new Songs("Are Dj Wale Bhai", "Khesari Lal Yadav"));
+        songs.add(new Songs("Bhatar Khali Ban Jaye", "Arvind Akela Kallji"));
+        songs.add(new Songs("Dhaka Kohariya me Balama", "Khesari Lal Yadav"));
 
         //Creates a Song adapter whose data source is a list of the songs.The adapter knows how to create list items for each item in the list.
         SongsAdapter adapter = new SongsAdapter(BhojpuriSongsActivity.this, songs);
@@ -48,12 +48,12 @@ public class BhojpuriSongsActivity extends AppCompatActivity {
                 Songs song = songs.get(position);
 
                 //To open new activity
-                Intent nowPlayingIntent  = new Intent(BhojpuriSongsActivity.this, NowPlayingActivity.class);
+                Intent nowPlayingIntent = new Intent(BhojpuriSongsActivity.this, NowPlayingActivity.class);
 
                 //passing extra information to the now playing activity.
-                nowPlayingIntent.putExtra("Song Name",song.getSongsName());
-                nowPlayingIntent.putExtra("Artist Name",song.getArtistName());
-                nowPlayingIntent.putExtra("color Resource",R.color.category_bhojpuri_songs);
+                nowPlayingIntent.putExtra("Song Name", song.getSongsName());
+                nowPlayingIntent.putExtra("Artist Name", song.getArtistName());
+                nowPlayingIntent.putExtra("color Resource", getResources().getColor(R.color.category_bhojpuri_songs));
 
                 startActivity(nowPlayingIntent);
             }
