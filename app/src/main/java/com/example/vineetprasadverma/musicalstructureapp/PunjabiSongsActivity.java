@@ -16,6 +16,8 @@ public class PunjabiSongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         //Creates the list of songs
         final ArrayList<Songs> songs = new ArrayList<Songs>();
         songs.add(new Songs("BackBone", "Hardy Sandhu"));

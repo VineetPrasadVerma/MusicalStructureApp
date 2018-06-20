@@ -16,6 +16,8 @@ public class BhojpuriSongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         //Create a list of songs
         final ArrayList<Songs> songs = new ArrayList<Songs>();
         songs.add(new Songs("Kariya Rashgulla", "Khesari Lal Yadav"));

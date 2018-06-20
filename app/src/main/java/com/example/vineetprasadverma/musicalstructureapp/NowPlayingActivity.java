@@ -1,9 +1,11 @@
 package com.example.vineetprasadverma.musicalstructureapp;
 
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class NowPlayingActivity extends AppCompatActivity {
@@ -12,6 +14,8 @@ public class NowPlayingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Get the intent.
         Intent intent = getIntent();
@@ -30,6 +34,16 @@ public class NowPlayingActivity extends AppCompatActivity {
         TextView artistTextView = findViewById(R.id.now_playing_artist_name);
         artistTextView.setTextColor(color);
         artistTextView.setText(artistName);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home: // Intercept the click on the home button
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

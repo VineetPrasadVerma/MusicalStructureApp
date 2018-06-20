@@ -17,17 +17,23 @@
         </activity>
         <activity
             android:name=".EnglishSongsActivity"
-            android:label="@string/english_songs" />
+            android:label="@string/english_songs"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".HindiSongsActivity"
-            android:label="@string/hindi_songs" />
+            android:label="@string/hindi_songs"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BhojpuriSongsActivity"
-            android:label="@string/bhojpuri_songs" />
+            android:label="@string/bhojpuri_songs"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PunjabiSongsActivity"
-            android:label="@string/punjabi_songs" />
-        <activity android:name=".NowPlayingActivity"
+            android:label="@string/punjabi_songs"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".NowPlayingActivity"
             android:label="@string/now_playing"></activity>
     </application>
 
